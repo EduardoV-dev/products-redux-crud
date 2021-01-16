@@ -1,0 +1,9 @@
+.input-text {
+  background-color: var(--primaryLighten) !important;
+  color: var(--dark) !important;
+  border: none !important;
+}
+
+.input-text::placeholder {
+  color: var(--placeholder) !important;
+}

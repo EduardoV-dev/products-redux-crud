@@ -1,0 +1,13 @@
+.logo {
+  margin: 0;
+}
+
+.navbar-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: var(--dark);
+}
+
+.navbar-link:hover {
+  color: var(--dark);
+}
