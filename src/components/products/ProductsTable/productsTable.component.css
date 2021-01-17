@@ -1,6 +1,13 @@
-.table-headers {
+.table-headers th {
+  position: sticky;
+  top: 0;
   background-color: var(--primary);
   color: var(--light);
+}
+
+.table-responsive {
+  max-height: 450px;
+  overflow-y: auto;
 }
 
 th,
@@ -25,3 +32,4 @@ td,
 .col-actions {
   width: 10rem;
 }
+

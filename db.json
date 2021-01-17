@@ -1,19 +1,64 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Jugo de Zanahoria",
-      "precio": "31111"
+      "productName": "Jugo de Zanahoria",
+      "price": "250",
+      "id": 1
     },
     {
-      "nombre": "Rib Eye 800g",
-      "precio": "200",
+      "productName": "Rib Eye 800g",
+      "price": "200",
       "id": 2
     },
     {
-      "nombre": "Jugo de Fresa",
-      "precio": "200",
+      "productName": "Jugo de Fresa",
+      "price": "200",
       "id": 3
+    },
+    {
+      "productName": "producto",
+      "price": "500",
+      "id": 4
+    },
+    {
+      "productName": "Tomahawk",
+      "price": "5000",
+      "id": 5
+    },
+    {
+      "productName": "Comida china ",
+      "price": "200",
+      "id": 6
+    },
+    {
+      "productName": "Sopas",
+      "price": "500",
+      "id": 7
+    },
+    {
+      "productName": "Comida",
+      "price": "500",
+      "id": 8
+    },
+    {
+      "productName": "product vkvlk  pruena",
+      "price": "5000",
+      "id": 10
+    },
+    {
+      "productName": "Limones",
+      "price": "500",
+      "id": 11
+    },
+    {
+      "productName": "Producto de prueba nuevo",
+      "price": "50000",
+      "id": 12
+    },
+    {
+      "productName": "Laptop",
+      "price": "500",
+      "id": 14
     }
   ]
 }

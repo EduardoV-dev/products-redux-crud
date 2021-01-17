@@ -9,7 +9,6 @@ const ProductsTable = () => {
   const products = useSelector(state => state.products);
   // eslint-disable-next-line
   useEffect(() => dispatch(fetchProducts()), []);
-
   if (products.length === 0) return null;
 
   return (

@@ -1,6 +1,11 @@
 import {
   FETCH_PRODUCTS,
-  ERROR
+  NETWORK_ERROR,
+  CREATE_PRODUCT,
+  FORM_ERROR,
+  EDIT_PRODUCT,
+  SELECT_PRODUCT,
+  DELETE_PRODUCT
 } from '../../types/products';
 
 export const getProductsAction = products => ({
@@ -8,6 +13,31 @@ export const getProductsAction = products => ({
   payload: products
 });
 
-export const handleErrorAction = () => ({
-  type: ERROR
+export const networkErrorAction = () => ({
+  type: NETWORK_ERROR
+});
+
+export const formErrorAction = value => ({
+  type: FORM_ERROR,
+  payload: value
+});
+
+export const createProductAction = product => ({
+  type: CREATE_PRODUCT,
+  payload: product
+});
+
+export const editProductAction = product => ({
+  type: EDIT_PRODUCT,
+  payload: product
+});
+
+export const selectProductAction = product => ({
+  type: SELECT_PRODUCT,
+  payload: product
+});
+
+export const deleteProductAction = idProduct => ({
+  type: DELETE_PRODUCT,
+  payload: idProduct
 });
