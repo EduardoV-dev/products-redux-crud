@@ -1,0 +1,73 @@
+.borders {
+  opacity: 0;
+  animation: animateBorders 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animateBorders {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rectangle,
+.cir {
+  fill: transparent;
+  stroke: var(--warning);
+  stroke-width: 1;
+}
+
+.rectangle {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+  animation: animateRectangle 1s ease forwards;
+}
+
+@keyframes animateRectangle {
+  0% {
+    stroke-dashoffset: 0;
+    stroke: var(--warning);
+  }
+  40% {
+    stroke-dashoffset: 60;
+    stroke: var(--warning);
+  }
+  80% {
+    stroke-dashoffset: 60;
+    stroke: var(--warning);
+  }
+  100% {
+    stroke-dashoffset: 60;
+    stroke: var(--warning);
+    fill: var(--warning);
+  }
+}
+
+.cir {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 0;
+  animation: animateCircle 1s ease forwards;
+}
+
+@keyframes animateCircle {
+  0% {
+    stroke-dashoffset: 0;
+    stroke: var(--warning);
+  }
+  40% {
+    stroke-dashoffset: 20;
+    stroke: var(--warning);
+  }
+  80% {
+    stroke-dashoffset: 20;
+    stroke: var(--warning);
+  }
+  100% {
+    stroke-dashoffset: 20;
+    stroke: var(--warning);
+    fill: var(--warning);
+  }
+}

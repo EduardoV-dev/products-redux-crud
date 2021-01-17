@@ -1,0 +1,47 @@
+.success-circle {
+  opacity: 0;
+  fill: var(--primaryLighten);
+  stroke-width: 3;
+  stroke: var(--primaryLighten);
+  animation: animateSuccessCircle 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animateSuccessCircle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.check {
+  fill: transparent;
+  stroke-width: 2;
+  stroke: transparent;
+  stroke-dasharray: 175;
+  stroke-dashoffset: 0;
+  animation: animateCheck 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes animateCheck {
+  0% {
+    stroke-dashoffset: 0;
+    stroke: var(--success);
+  }
+  40% {
+    stroke-dashoffset: 175;
+    stroke: var(--success);
+  }
+  80% {
+    stroke-dashoffset: 350;
+    stroke: var(--success);
+  }
+  100% {
+    stroke-dashoffset: 350;
+    stroke: var(--success);
+    fill: var(--success);
+  }
+}

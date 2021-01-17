@@ -39,8 +39,8 @@ export const handleCreateProduct = product => async dispatch => {
   }
 }
 
-export const handleSelectProduct = product => dispatch =>
-  dispatch(selectProductAction(product));
+export const handleSelectProduct = product => 
+  selectProductAction(product);
 
 export const handleEditProduct = product => async dispatch => {
   try {

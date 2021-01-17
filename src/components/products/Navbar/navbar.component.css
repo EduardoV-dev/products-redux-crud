@@ -5,9 +5,11 @@
 .navbar-link {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  color: var(--dark);
+  color: var(--light);
+  transition: all 0.3s ease;
 }
 
 .navbar-link:hover {
-  color: var(--dark);
+  color: var(--light);
+  transform: scale(1.05) rotate(-1deg);
 }

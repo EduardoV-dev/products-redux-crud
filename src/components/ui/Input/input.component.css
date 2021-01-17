@@ -1,5 +1,5 @@
 .input-text {
-  background-color: var(--primaryLighten) !important;
+  background-color: #fff !important;
   color: var(--dark) !important;
   border: none !important;
 }

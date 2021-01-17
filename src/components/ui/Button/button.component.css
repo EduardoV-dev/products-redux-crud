@@ -10,9 +10,17 @@
   transition: all 0.3s ease !important;
 }
 
+.btn-primary-no-shadow {
+  box-shadow: none;
+}
+
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: var(--primaryLightenHover) !important;
+}
+
+.btn-primary:active {
+  background-color: var(--primaryLighten) !important;
 }
 
 .btn-info {
@@ -27,6 +35,10 @@
   background-color: var(--infoHover) !important;
 }
 
+.btn-info:active {
+  background-color: var(--info) !important;
+}
+
 .btn-danger {
   background-color: var(--danger) !important;
   padding: 0.4rem 1.5rem !important;
@@ -36,4 +48,8 @@
 .btn-danger:hover,
 .btn-danger:focus {
   background-color: var(--dangerHover) !important;
+}
+
+.btn-danger:active {
+  background-color: var(--danger) !important;
 }

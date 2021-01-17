@@ -24,41 +24,6 @@
       "productName": "Tomahawk",
       "price": "5000",
       "id": 5
-    },
-    {
-      "productName": "Comida china ",
-      "price": "200",
-      "id": 6
-    },
-    {
-      "productName": "Sopas",
-      "price": "500",
-      "id": 7
-    },
-    {
-      "productName": "Comida",
-      "price": "500",
-      "id": 8
-    },
-    {
-      "productName": "product vkvlk  pruena",
-      "price": "5000",
-      "id": 10
-    },
-    {
-      "productName": "Limones",
-      "price": "500",
-      "id": 11
-    },
-    {
-      "productName": "Producto de prueba nuevo",
-      "price": "50000",
-      "id": 12
-    },
-    {
-      "productName": "Laptop",
-      "price": "500",
-      "id": 14
     }
   ]
 }

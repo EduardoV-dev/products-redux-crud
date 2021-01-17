@@ -19,7 +19,7 @@ const ProductForm = ({
     price: 0
   });
   const dispatch = useDispatch();
-  const { formError, selectedProduct } = useSelector(state => state);
+  const { formError, selectedProduct } = useSelector(state => state.products);
   /* When being on the edit page, the inputs will have the value of the corresponding product selected, this won't happen if the products page is on and the useEffect will do nothing */
   useEffect(() => {
     if (selectedProduct) setInput(selectedProduct);
@@ -69,6 +69,7 @@ const ProductForm = ({
           </label>
           <Input
             type="number"
+            step='0.01'
             className="form-control input-text"
             placeholder={pricePlaceholder}
             name="price"
