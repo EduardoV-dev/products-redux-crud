@@ -1,30 +1,50 @@
 import React from 'react';
-import { Button } from '../../ui';
-import { SuccessIcon } from '../../icons';
+import { withAlert } from '../../HOC';
+import {
+  SuccessIcon,
+  WarningIcon,
+  ErrorIcon
+} from '../../icons';
 import './alert.component.css';
 
-const Alert = () => {
+const Alert = ({
+  title,
+  content,
+  children,
+  icon
+}) => {
+  let Icon;
+  switch (icon) {
+    default:
+    case 'success':
+      Icon = <SuccessIcon />
+      break;
+    case 'warning':
+      Icon = <WarningIcon />
+      break;
+    case 'error':
+      Icon = <ErrorIcon />
+      break;
+  }
+
   return (
     <div className="Alert jump">
       <h3 className="alert-head">
-        ¡Producto agregado correctamente!
+        {title}
       </h3>
       <div className="alert-body">
         <figure>
-          <SuccessIcon />
+          {Icon}
         </figure>
         <p className="content">
-          El producto se ha guardado en la base de datos correctamente.
+          {content}
         </p>
       </div>
       <div className="alert-foot">
-        <Button 
-          type="button"
-          className="btn btn-primary btn-primary-no-shadow"
-        >Aceptar</Button>
+        {children}
       </div>
     </div>
   );
 }
 
-export default Alert;
+export default withAlert(Alert);

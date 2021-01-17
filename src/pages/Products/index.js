@@ -12,7 +12,9 @@ const Products = () => {
       <ProductsTable 
         to={'/Producto/1'}
       />
-      <Alert />
+      <Alert 
+        alertType='warning'
+      />
     </Layout>
   );
 }
