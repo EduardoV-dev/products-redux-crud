@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../../components/layout';
 import { ProductsTable } from '../../components/products';
-import { Alert } from '../../components/common';
 
 const Products = () => {
   return (
@@ -11,9 +10,6 @@ const Products = () => {
     >
       <ProductsTable 
         to={'/Producto/1'}
-      />
-      <Alert 
-        alertType='warning'
       />
     </Layout>
   );
